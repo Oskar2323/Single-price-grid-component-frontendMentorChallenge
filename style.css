@@ -118,6 +118,8 @@ footer{
     position: absolute;
 }
 
+
+/* the mobile version doesn't work how I like. I'm open for some advice */
 @media screen and (max-width 375px){
    .subs-why{
        flex-wrap: wrap;
