@@ -12,13 +12,10 @@ body{
     display: grid;
 }
 
-html{
-    position:relative;
-}
 
 
 
-.main{
+/* .main{
    margin: auto;
    
 }
@@ -116,11 +113,11 @@ footer{
     bottom: 0rem;
     height: 1rem;
     position: absolute;
-}
+} */
 
 
 /* the mobile version doesn't work how I like. I'm open for some advice */
-@media screen and (max-width 375px){
+/* @media screen and (max-width 375px){
    .subs-why{
        flex-wrap: wrap;
    } 
@@ -130,4 +127,58 @@ footer{
     .subs-why{
         flex-wrap: wrap;
     }
+} */
+
+
+/* try to use grid */
+
+.main{
+    display: grid;
+    grid-template-columns: [line1] 20% [line2] 20% [line3] 20% [line4] 20% [line5] 20% [line6] 20%;
+    grid-template-rows: : [line1] 20% [line2] 20% [line3] 20% [line4] 20% [line5] 20% [line6] 20%;
+    grid-column-start: <number> | <name> | span <number> | span <name> | auto;
+    grid-column-end: <number> | <name> | span <number> | span <name> | auto;
+    grid-row-start: <number> | <name> | span <number> | span <name> | auto;
+    grid-row-end: <number> | <name> | span <number> | span <name> | auto;
+}
+
+.intro{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 22;
+    grid-row-end: 3;
+    background: white;
+}
+
+.intro h2{
+    font-size: 2.6rem;
+    color: hsl(71, 73%, 54%);
+    margin-left: 2rem;
+    padding-top: 2rem;
+}
+
+.intro h1{
+    font-size: 3rem;
+    color: hsl(179, 62%, 43%);
+    margin-left: 2rem;
+    padding-top: 2rem;
+}
+
+.intro p{
+    margin-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: hsl(218, 22%, 67%);
+    font-size: 1.6rem;
+}
+
+.subs{
+    background: #2bb3b1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: bottom;
+    
+   
+    
+
 }
