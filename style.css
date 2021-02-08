@@ -7,7 +7,7 @@
 
 
 body{
-    font-size: 16px;
+    /* font-size: 16px; */
     background: #e5eff5;
     font-family: "Karla";
     width: 100%;
@@ -16,13 +16,13 @@ body{
 .main{
     display: grid;
     min-height: 90vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: : auto;
     
 }
 
 .intro{
-    grid-column:3/5;
+    grid-column:2/4;
     grid-row: 2/3;
     background: white;
 }
@@ -51,7 +51,7 @@ body{
 
 .subs{
     background: #2bb3b1;
-    grid-column: 3/4;
+    grid-column: 2/3;
     grid-row: 3/4;
     padding-bottom: 2rem;
 }
@@ -89,7 +89,7 @@ body{
 }
 
   .why{
-      grid-column: 4/5;
+      grid-column: 3/4;
       grid-row: 3/4;
       background: #4abebd; 
 }
@@ -105,8 +105,28 @@ body{
     margin-left: 3rem;
 } 
 
-@media screen and (max-width 1440px){
+@media screen and (max-width: 775px){
     .main{
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .intro{
+      font-size: 50%;
+    }
+
+    .intro, .subs, .why{
+        grid-column: auto;
+        grid-row: auto;
+        
+    }
+    
+    .subs{
+        
+    }
+    .why{
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
     }
 }
