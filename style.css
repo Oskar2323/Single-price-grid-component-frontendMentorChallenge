@@ -4,103 +4,30 @@
     box-sizing: border-box;
 }
 
+
+
 body{
     font-size: 16px;
     background: #e5eff5;
     font-family: "Karla";
-    height: 100%;
-    display: grid;
-}
-
-
-
-
-/* .main{
-   margin: auto;
-   
-}
-
-.intro{
-    margin: auto;
-    background: white;
     width: 100%;
-    margin-top: 10rem;
 }
-.intro h1{
-    font-size: 3rem;
-    color: hsl(179, 62%, 43%);
-    margin-left: 2rem;
-    padding-top: 2rem;
-}
-
-.intro h2{
-    font-size: 2.6rem;
-    color: hsl(71, 73%, 54%);
-    margin-left: 2rem;
-    padding-top: 2rem;
-}
-
-.intro p{
-    margin-left: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    color: hsl(218, 22%, 67%);
-    font-size: 1.6rem;
-}
-
-.subs-why{
-    display: flex;
-}
-
-.subs{
-    background: #2bb3b1;
-    width: 50%;
-    padding: 2rem;
-}
-
-
-
-.first{
-    color: hsl(204, 43%, 93%);
-    margin-left: 3rem;
-    margin-top: 1rem;
-}
-
-footer{
-    width: auto;
-    bottom: 0rem;
-    height: 1rem;
-    position: absolute;
-} */
-
-
-/* the mobile version doesn't work how I like. I'm open for some advice */
-/* */
-
-
-/* try to use grid */
 
 .main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: : 100vh;
-    grid-column-start: <number> | <name> | span <number> | span <name> | auto;
-    grid-column-end: <number> | <name> | span <number> | span <name> | auto;
-    grid-row-start: <number> | <name> | span <number> | span <name> | auto;
-    grid-row-end: <number> | <name> | span <number> | span <name> | auto;
+    min-height: 90vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: : auto;
+    
 }
 
 .intro{
-    /* grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3; */
-    grid-column:2/4;
+    grid-column:3/5;
     grid-row: 2/3;
     background: white;
 }
 
-.intro h2{
+ .intro h2{
     font-size: 2.6rem;
     color: hsl(71, 73%, 54%);
     margin-left: 2rem;
@@ -124,23 +51,27 @@ footer{
 
 .subs{
     background: #2bb3b1;
-    grid-column: 2/3;
+    grid-column: 3/4;
     grid-row: 3/4;
     padding-bottom: 2rem;
 }
 
 .subs h2{
     color:hsl(204, 43%, 93%);
+    margin-top: 2rem;
+    margin-left: 2rem;
 }
+
 
 .dolar strong{
     color:hsl(204, 43%, 93%);
     font-size: 2.6rem;
-    margin-top: 2rem;
+    margin-left: 2rem;
 }
 
 .subs p{
     color:hsl(204, 43%, 93%);
+    margin-left: 2rem;
 }
 
 .subs button{
@@ -157,10 +88,10 @@ footer{
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.1);
 }
 
-.why{
-    grid-column: 3/4;
-    grid-row:3/4;
-    background: #4abebd;
+  .why{
+      grid-column: 4/5;
+      grid-row: 3/4;
+      background: #4abebd; 
 }
 
 .why h2{
@@ -172,17 +103,10 @@ footer{
 .why p{
     color: hsl(204, 43%, 93%);
     margin-left: 3rem;
-}
+} 
 
-@media screen and (max-width 375px){
+@media screen and (max-width 1440px){
     .main{
-        grid-column: auto;
-        grid-row: auto;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     }
- }
- 
- @media screen and(min-width 1440px){
-     .subs-why{
-         flex-wrap: wrap;
-     }
- } 
+}
