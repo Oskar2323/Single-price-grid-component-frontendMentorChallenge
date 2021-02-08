@@ -7,76 +7,58 @@
 
 
 body{
-    /* font-size: 16px; */
     background: #e5eff5;
     font-family: "Karla";
-    width: 100%;
-}
-
-.main{
-    display: grid;
-    min-height: 90vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: : auto;
+    font-size: 16px;
     
 }
 
-.intro{
-    grid-column:2/4;
-    grid-row: 2/3;
-    background: white;
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
- .intro h2{
-    font-size: 2.6rem;
-    color: hsl(71, 73%, 54%);
-    margin-left: 2rem;
-    padding-top: 2rem;
+.intro{
+    background: white;
+    padding: 2rem;
 }
 
 .intro h1{
-    font-size: 3rem;
     color: hsl(179, 62%, 43%);
-    margin-left: 2rem;
-    padding-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.intro h2{
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 1rem;
 }
 
 .intro p{
-    margin-left: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     color: hsl(218, 22%, 67%);
-    font-size: 1.6rem;
 }
-
 .subs{
     background: #2bb3b1;
-    grid-column: 2/3;
-    grid-row: 3/4;
-    padding-bottom: 2rem;
+    padding: 2rem;
 }
 
 .subs h2{
     color:hsl(204, 43%, 93%);
-    margin-top: 2rem;
-    margin-left: 2rem;
+    margin-bottom: 1rem;
 }
-
 
 .dolar strong{
     color:hsl(204, 43%, 93%);
-    font-size: 2.6rem;
-    margin-left: 2rem;
+    font-size: 2rem;
 }
 
 .subs p{
     color:hsl(204, 43%, 93%);
-    margin-left: 2rem;
 }
 
 .subs button{
     margin-top: 2rem;
-    width: 70%;
+    width: 50%;
     background: hsl(71, 73%, 54%);
     color: hsl(204, 43%, 93%);
     border: none;
@@ -88,45 +70,56 @@ body{
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.1);
 }
 
-  .why{
-      grid-column: 3/4;
-      grid-row: 3/4;
-      background: #4abebd; 
+.why{
+    background: #4abebd; 
+    padding: 2rem;
 }
 
 .why h2{
     color: hsl(204, 43%, 93%);
-    margin-left: 3rem;
-    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
-.why p{
+.why ul{
     color: hsl(204, 43%, 93%);
-    margin-left: 3rem;
-} 
+    list-style-type: none;
+}
+
+.intro{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.subs{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.why{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+ 
 
 @media screen and (max-width: 775px){
-    .main{
+    main{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: 1fr;
     }
-
     .intro{
-      font-size: 50%;
-    }
-
-    .intro, .subs, .why{
-        grid-column: auto;
-        grid-row: auto;
-        
+        grid-column:1/2;
+        grid-row: 1/2;
     }
     
     .subs{
-        
+        grid-column:1/2;
+        grid-row: 2/3;
     }
+    
     .why{
-        margin-bottom: 2rem;
-        padding-bottom: 2rem;
+        grid-column:1/2;
     }
+
 }
