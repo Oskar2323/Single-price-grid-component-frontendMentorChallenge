@@ -56,11 +56,15 @@ main{
     color:hsl(204, 43%, 93%);
 }
 
-.subs button{
-    margin-top: 2rem;
+.sign a{
+    text-decoration:none;
+}
+
+.sign{
     width: 50%;
     background: hsl(71, 73%, 54%);
     color: hsl(204, 43%, 93%);
+    margin-top: 1rem;
     border: none;
     padding: 1rem 3rem;
     cursor: pointer;
