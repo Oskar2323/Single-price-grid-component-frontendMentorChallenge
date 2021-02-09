@@ -58,12 +58,12 @@ main{
 
 .sign a{
     text-decoration:none;
+    color: hsl(204, 43%, 93%);
 }
 
 .sign{
     width: 50%;
     background: hsl(71, 73%, 54%);
-    color: hsl(204, 43%, 93%);
     margin-top: 1rem;
     border: none;
     padding: 1rem 3rem;
